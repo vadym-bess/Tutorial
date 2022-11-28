@@ -752,7 +752,7 @@ function getUsers() {
          <li>Location: ${item.address.geo.lat}, ${item.address.geo.lng}</li>
          </ul>
       `).join("");
-      container.innerHTML += markup;
+      container.innerHTML = markup;
       console.log(markup);
     })
        
