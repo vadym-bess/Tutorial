@@ -737,38 +737,33 @@
 //   то перебери його будь - яким способом і виведи на сторінку в контейнер.
 //   Має бути його ім‘я, пошта, місто, назва компанії і геопозиція(lat, lng)
 
-function getUsers() {
-  const container = document.querySelector("#users-container");
+// function getUsers() {
+//   const container = document.querySelector("#users-container");
 
-     fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => response.json())
-    .then(data => {
-      const markup = data.map(item =>
-        `<ul class="user-data-thumb">
-         <li>Name: ${item.name}</li>
-         <li>Email: ${item.email}</li>
-         <li>Address: ${item.address.city}</li>
-         <li>Company Name: ${item.company.name} </li>
-         <li>Location: ${item.address.geo.lat}, ${item.address.geo.lng}</li>
-         </ul>
-      `).join("");
-      container.innerHTML = markup;
-      console.log(markup);
-    })
+//      fetch('https://jsonplaceholder.typicode.com/users')
+//     .then(response => response.json())
+//     .then(data => {
+//       const markup = data.map(item =>
+//         `<ul class="user-data-thumb">
+//          <li>Name: ${item.name}</li>
+//          <li>Email: ${item.email}</li>
+//          <li>Address: ${item.address.city}</li>
+//          <li>Company Name: ${item.company.name} </li>
+//          <li>Location: ${item.address.geo.lat}, ${item.address.geo.lng}</li>
+//          </ul>
+//       `).join("");
+//       container.innerHTML = markup;
+//       console.log(markup);
+//     })
        
-    .catch(error => console.log("Error" + error));
+//     .catch(error => console.log("Error" + error));
 
-} 
- getUsers()
+// } 
+//  getUsers()
 
 
- 
+const arrowFunction = (a, b, c) => {
+  return a + b + c;
+}
 
-//  const newElement = document.createElement('p');
-//      newElement.className = 'paragraph' ;
-//      newElement.innerText = `${element}`;   
-//      newElement.style.color = colors[index];
-//      newElement.style.fontSize = fontSize[index];
-//      console.log(newElement); 
-//      container.appendChild(newElement);
-// }
+const arrowFunction2 = () => a + b + с;
