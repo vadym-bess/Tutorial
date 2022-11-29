@@ -761,14 +761,12 @@
 // } 
 //  getUsers()
 
+//-----------------------------------------------------------
 
-const arrowFunction = (a, b, c) => {
-  return a + b + c;
-}
+// const arrowFunction = (a, b, c) => {
+//   return a + b + c;
+// }
 
-const arrowFunction2 = () => a + b + с;
+// const arrowFunction2 = () => a + b + с;
 
 
-fetch(bejekjfkejbekjbkejkej){
-  
-}
